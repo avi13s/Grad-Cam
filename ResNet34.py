@@ -77,10 +77,10 @@ class ResNet34(BasicModule):
         x = self.layer1(x)
         x = self.layer2(x)
 
-        # ----- Attn change ----
-        unary_potential = self.unary_attn(x)
-        x = x*unary_potential
-        # ---------------------
+        #         # ----- Attn change ----
+        #         unary_potential = self.unary_attn(x)
+        #         x = x*unary_potential
+        #         # ---------------------
         x = self.layer3(x)
 
         x = x.view(x.size(0), -1)
