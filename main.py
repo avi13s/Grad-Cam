@@ -1,7 +1,7 @@
 from torch import nn
 from torchvision import models, transforms
 from gradcam import GradCAM
-from train_densenet import *
+from train_CNN import *
 import matplotlib.pyplot as plt
 import numpy as np
 import glob
